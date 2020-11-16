@@ -25,6 +25,7 @@ func initDatabase() {
   fmt.Println("Connection to database established.")
 }
 
+// Defining the routes
 func setupRoutes(app *fiber.App){
   app.Get("/", home.GetContact)
   app.Post("/", home.PostContact)
