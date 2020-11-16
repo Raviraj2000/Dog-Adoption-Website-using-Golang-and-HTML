@@ -40,6 +40,7 @@ func setupRoutes(app *fiber.App){
   app.Get("*", adoption.GetNotFound)
 }
 
+//Main function
 func main(){
   engine := html.New("./templates", ".html")
   app := fiber.New(fiber.Config{
