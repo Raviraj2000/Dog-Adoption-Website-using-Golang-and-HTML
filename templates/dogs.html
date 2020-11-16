@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Woof</title>
+    <link rel="shortcut icon" href="dogImages/favicon.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/dogs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img src="dogImages/logo.png" alt="logo">
+            <h2>woof</h2>
+        </div>
+        <ul class="nav-bar">
+            <li class="nav-links"><a href="/">home</a></li>
+            <li class="nav-links"><a href="/#about">About</a></li>
+            <li class="nav-links"><a href="/placeAdoption">Place For Adoption</a></li>
+            <li class="nav-links"><a href="/#contact">contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+    </nav>
+
+    <div class="card-holder">
+      {{range .dogs}}
+            <div class="card">
+                <div class="image-container">
+                    <img src={{.Image}} alt="dog image">
+                </div>
+                <div class="text-container">
+                    <p class="dog-breed">{{.Breed}}</p>
+                    <h2 class="dog-name">{{.Name}}, {{.Gender}}</h2>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</p>
+                    <a href="/dog/{{.ID}}"><button class="btn" type="button">Read More</button></a>
+                </div>
+            </div>
+            {{end}}
+    </div>
+
+
+    <footer class="main-footer">
+        <div class="footer-parent">
+            <div class="footer-child footer-logo">
+                <img src="dogImages/logo.png" alt="logo" id="logo">
+                <h1>woof</h1>
+                <p class="social-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nam soluta nisi hic molestias rem possimus facilis explicabo corrupti nihil!</p>
+                <ul class="social" id="social">
+                    <li><a href="#social" class="social-links"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#social" class="social-links"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#social" class="social-links"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#social" class="social-links"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <h2 class="contact-head" style=" font-size: 2.2rem;" >Contact</h2>
+                <div class="contact-child">
+                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                    <p>304-Pawan Palace, Ganesh Nagar, Chinchpada Road, Kalyan-East 421306</p>
+                </div>
+                <div class="contact-child">
+                    <h3><i class="fas fa-phone-alt"></i> Phone</h3>
+                    <p>+91 9669699669</p>
+                </div>
+                <div class="contact-child">
+                    <h3><i class="far fa-envelope"></i> Email</h3>
+                    <p>woofofficial@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright"><span>&copy; </span>Copyright 2020, woof | All Rights Reserved</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+        });
+    </script>
+    <script src="script/dogs.js"></script>
+</body>
+
+</html>

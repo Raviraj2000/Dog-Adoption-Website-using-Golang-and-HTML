@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Woof</title>
+    <link rel="shortcut icon" href="dogImages/favicon.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header id="home">
+        <nav>
+            <div class="logo">
+                <img src="dogImages/logo.png" alt="logo">
+                <h2>woof</h2>
+            </div>
+            <ul class="nav-bar">
+                <li class="nav-links"><a href="/">home</a></li>
+                <li class="nav-links"><a href="#about">about</a></li>
+                <li class="nav-links"><a href="#adopt">adopt</a></li>
+                <li class="nav-links"><a href="#contact">contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars fa-4x" style="color: white;"></i>
+            </div>
+        </nav>
+        <section class="header-section">
+            <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0">Lorem ipsum dolor sit amet.</h1>
+            <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Vero, delectus iste rem nisi quidem a voluptate dolore nemo qui
+                asperiores?</p>
+            <a href="#adopt"><button class="btn">learn more</button></a>
+        </section>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="main-about" id="about">
+        <div class="about">
+            <h2>About Us</h2>
+            <div class="about-div" data-aos="fade-up">
+                <img src="dogImages/2dogs.jpg" alt="image" id="about-image">
+                <div class="about-child">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro amet ullam aut voluptatibus
+                        nesciunt corporis! Totam doloremque ab labore sequi, aliquam commodi odio quae praesentium
+                        alias, consequatur possimus soluta voluptatum laudantium nesciunt fuga! Explicabo amet facere
+                        vel sunt nisi illum voluptas quidem, doloribus iste quis accusantium tempora! Tempore, alias
+                        hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top" data-aos="fade-up">
+            <a href="#home">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ADOPT  -->
+    <section class="main-adopt" id="adopt">
+        <blockquote class="quote" data-aos="fade-up">
+            &ldquo; You can't change a dog's past, but you could rewrite his future. &rdquo;
+        </blockquote>
+        <div class="buttons" data-aos="fade-up" data-aos-offset="80">
+            <a href="/placeAdoption" class="btn1">Place A Dog For Adoption</a>
+            <a href="/dogs" class="btn2">Adopt A Dog</a>
+        </div>
+        <img src="dogImages/rosedog.png" alt="rosedog" data-aos="fade-up">
+        <div class="back-to-top" data-aos="fade-up">
+            <a href="#home">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT  -->
+    <section class="main-contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action = "/" method="POST" class="form" id="form">
+            <div class="form-group">
+                <label for="name" data-aos="fade-up" data-aos-offset="150">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name..." data-aos="fade-up"
+                    data-aos-offset="150" required>
+            </div>
+            <div class="form-group">
+                <label for="email" data-aos="fade-up" data-aos-offset="125">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email..." data-aos="fade-up"
+                    data-aos-offset="125" required>
+            </div>
+            <div class="form-group">
+                <label for="message" data-aos="fade-up" data-aos-offset="100">Message</label>
+                <textarea name="message" id="message" placeholder="Enter Here..." data-aos="fade-up"
+                    data-aos-offset="100" required></textarea>
+            </div>
+            <button type="submit" value="Send" class="btn" id="btn" data-aos="fade-up" data-aos-offset="-10">Submit</button>
+        </form>
+        <div class="back-to-top" data-aos="fade-up">
+            <a href="#home">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="main-footer">
+        <div class="footer-parent">
+            <div class="footer-child footer-logo">
+                <img src="dogImages/logo.png" alt="logo" id="logo">
+                <h1>woof</h1>
+                <p class="social-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nam soluta nisi hic
+                    molestias rem possimus facilis explicabo corrupti nihil!</p>
+                <ul class="social" id="social">
+                    <li><a href="#" class="social-links"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                    <li><a href="#" class="social-links"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#" class="social-links"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                    <li><a href="#" class="social-links"><i class="fab fa-twitter fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <h2 class="contact-head">Contact</h2>
+                <div class="contact-child">
+                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                    <p>Mumbai, Maharashtra</p>
+                </div>
+                <div class="contact-child">
+                    <h3><i class="fas fa-phone"></i> Phone</h3>
+                    <p>+91 9669699669</p>
+                </div>
+                <div class="contact-child">
+                    <h3><i class="far fa-envelope"></i> Email</h3>
+                    <p>woofofficial@example.com</p>
+                </div>
+            </div>
+        </div>
+        <p class="copyright"><span>&copy; </span>Copyright 2020, woof | All Rights Reserved</p>
+    </footer>
+
+    <!-- JS LINKS  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            offset: 300
+        });
+    </script>
+    <script src="script/home.js"></script>
+</body>
+
+</html>

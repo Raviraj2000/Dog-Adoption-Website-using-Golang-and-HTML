@@ -1,0 +1,107 @@
+.dog-details {
+  background-color: white;
+  width: 60%;
+  height: auto;
+  margin: 13rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0.4rem 0.4rem 1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.dog-img {
+  height: 30rem;
+}
+
+.dog-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.dog-text {
+  padding: 3rem;
+  position: relative;
+}
+
+.dog-text h3 {
+  font-size: 2.4rem;
+  margin: 1rem 0 1.5rem 0;
+  text-transform: capitalize;
+}
+
+.dog-text h4 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.dog-text .address {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+}
+
+.dog-text p {
+  font-size: 1.4rem;
+  margin-right: 3rem;
+}
+
+.dog-text .adopt-btn {
+  position: absolute;
+  right: 10%;
+  bottom: 3rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem 2rem;
+  transition: all 0.3s linear;
+}
+
+.dog-text .adopt-btn:hover {
+  background-color: #1e272e;
+  color: white;
+}
+
+.dog-text .adopt-btn:hover .fas {
+  transition: all 0.2s linear;
+  transform: translateX(0.4rem);
+}
+
+/* RESPONSIVE CODE  */
+@media screen and (max-width: 888px) {
+  html {
+    font-size: 55%;
+  }
+  .dog-details {
+    display: block;
+    margin-top: 10rem;
+  }
+  .dog-text {
+    background-color: white;
+    padding-bottom: 8rem;
+    margin-top: -1rem;
+  }
+  .dog-text h3 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768.5px) {
+  html {
+    font-size: 55%;
+  }
+  .dog-details {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .dog-details {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 325px) {
+  html {
+    font-size: 40%;
+  }
+}
