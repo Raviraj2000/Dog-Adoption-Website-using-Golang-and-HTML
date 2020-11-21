@@ -14,7 +14,7 @@ import (
 
 func initDatabase() {
 	var err error
-	database.DBConn, err = gorm.Open("postgres", "host=localhost port=5432 user=postgres dbname=Dog-Adoption-WebApp sslmode=disable password=supradyn23")
+	database.DBConn, err = gorm.Open(#Database Details)
 	if err != nil {
 		panic("Failed to Connect to Database")
 	}
