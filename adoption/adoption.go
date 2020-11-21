@@ -20,6 +20,7 @@ type Dog struct {
 	Age      int
 	Info     string
 	Image    string
+	Location string
 	Adopters Adopter
 }
 
@@ -44,6 +45,7 @@ type PlaceAdoption struct {
 	DogGender string
 	Breed     string
 	Image     string
+	Adopters []Adopter
 }
 
 func GetAdopter(c *fiber.Ctx) error {
@@ -121,11 +123,13 @@ func PostPlaceAdoption(c *fiber.Ctx) error {
 			}
 		}
 	}
-	placeAdoption.Image = fmt.Sprintf("adoption/ToPlace/" + placeAdoption.PlaceID + "_" + placeAdoption.DogName + ".jpg")
+	placeAdoption.Image = fmt.Sprintf("dogImages/Allen" + placeAdoption.PlaceID + "_" + placeAdoption.DogName + ".jpg")
 	fmt.Println(placeAdoption)
+
 
 	if err := db.Create(&placeAdoption).Error; err != nil {
 		log.Println(err)
+
 		return c.Redirect("/error")
 	}
 	return c.Redirect("/thankyou")
